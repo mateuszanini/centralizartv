@@ -1,0 +1,8 @@
+# www.robotstxt.org/
+# Permitir que todos os robôs indexem o conteúdo do site
+
+User-agent: *
+Allow: /
+
+# Link para o seu sitemap atualizado
+Sitemap: https://centralizartv.com.br/sitemap.xml
