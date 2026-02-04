@@ -21,6 +21,8 @@
     <meta property="twitter:description" content="Gere o gabarito de furação exato para instalar sua TV no painel ou parede.">
     <meta property="twitter:image" content="https://centralizartv.com.br/thumb-social.jpg">
 
+    <meta name="google-adsense-account" content="ca-pub-3665312731928955">
+
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230d6efd'/%3E%3Cpath d='M8 10h16v10H8z' fill='white'/%3E%3Crect x='10' y='22' width='12' height='2' fill='white'/%3E%3Cpath d='M6 6v4h2V8h2V6H6zm16 0v2h2v2h2V6h-4z' fill='%2399ccff'/%3E%3C/svg%3E">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -108,6 +110,8 @@
           "featureList": "Cálculo de centralização, gabarito de furação, altura ideal VESA"
         }
     </script>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3665312731928955" crossorigin="anonymous"></script>
 </head>
 <body class="py-5">
 
@@ -115,7 +119,7 @@
     <div class="ad-sidebar ad-right">ESPAÇO PARA ANÚNCIO</div>
 
     <div class="container" style="max-width: 1000px;">
-        <header class="text-center mb-5 no-print">
+        <header class="text-center mb-5 no-print" role="banner">
             <h1 class="fw-bold text-dark mb-2"><i class="bi bi-rulers me-2"></i>CALCULADORA DE INSTALAÇÃO DE TV</h1>
             <p class="lead text-muted mx-auto" style="max-width: 750px;">
                 Gere o gabarito de furação exato para painéis ou paredes em segundos.
@@ -123,6 +127,7 @@
             </p>
         </header>
 
+        <main role="main">
         <form id="tvForm" class="no-print">
             <div class="row g-4 mb-4 text-center">
                 <div class="col-lg-4 col-12 text-start">
@@ -130,12 +135,12 @@
                         <div class="card-body">
                             <h6 class="card-title fw-bold mb-4 text-uppercase small text-muted text-center"><i class="bi bi-grid-1x2 me-2"></i>Painel</h6>
                             <div class="row mb-3 align-items-center">
-                                <label class="col-7 small fw-semibold ps-4">Largura (mm)</label>
-                                <div class="col-5"><input type="number" id="pLargura" class="form-control form-control-sm text-end" value="1600"></div>
+                                <label class="col-7 small fw-semibold ps-4" for="pLargura">Largura (mm)</label>
+                                <div class="col-5"><input type="number" id="pLargura" name="pLargura" class="form-control form-control-sm text-end" value="1600"></div>
                             </div>
                             <div class="row align-items-center">
-                                <label class="col-7 small fw-semibold ps-4">Altura (mm)</label>
-                                <div class="col-5"><input type="number" id="pAltura" class="form-control form-control-sm text-end" value="900"></div>
+                                <label class="col-7 small fw-semibold ps-4" for="pAltura">Altura (mm)</label>
+                                <div class="col-5"><input type="number" id="pAltura" name="pAltura" class="form-control form-control-sm text-end" value="900"></div>
                             </div>
                         </div>
                     </div>
@@ -146,12 +151,12 @@
                         <div class="card-body">
                             <h6 class="card-title fw-bold mb-4 text-uppercase small text-muted text-center"><i class="bi bi-tv me-2"></i>Televisão</h6>
                             <div class="row mb-3 align-items-center">
-                                <label class="col-7 small fw-semibold ps-4">Largura (mm)</label>
-                                <div class="col-5"><input type="number" id="tvLargura" class="form-control form-control-sm text-end" value="1240"></div>
+                                <label class="col-7 small fw-semibold ps-4" for="tvLargura">Largura (mm)</label>
+                                <div class="col-5"><input type="number" id="tvLargura" name="tvLargura" class="form-control form-control-sm text-end" value="1240"></div>
                             </div>
                             <div class="row align-items-center">
-                                <label class="col-7 small fw-semibold ps-4">Altura (mm)</label>
-                                <div class="col-5"><input type="number" id="tvAltura" class="form-control form-control-sm text-end" value="720"></div>
+                                <label class="col-7 small fw-semibold ps-4" for="tvAltura">Altura (mm)</label>
+                                <div class="col-5"><input type="number" id="tvAltura" name="tvAltura" class="form-control form-control-sm text-end" value="720"></div>
                             </div>
                         </div>
                     </div>
@@ -162,16 +167,16 @@
                         <div class="card-body">
                             <h6 class="card-title fw-bold mb-4 text-uppercase small text-muted text-center"><i class="bi bi-gear me-2"></i>VESA e Ajuste</h6>
                             <div class="row mb-3 align-items-center">
-                                <label class="col-7 small fw-semibold ps-4">Topo da TV ao Furo (mm)</label>
-                                <div class="col-5"><input type="number" id="vesaTopo" class="form-control form-control-sm text-end" value="300"></div>
+                                <label class="col-7 small fw-semibold ps-4" for="vesaTopo">Topo da TV ao Furo (mm)</label>
+                                <div class="col-5"><input type="number" id="vesaTopo" name="vesaTopo" class="form-control form-control-sm text-end" value="350"></div>
                             </div>
                             <div class="row mb-3 align-items-center">
-                                <label class="col-7 small fw-semibold ps-4">Largura VESA (mm)</label>
-                                <div class="col-5"><input type="number" id="vLargura" class="form-control form-control-sm text-end" value="200"></div>
+                                <label class="col-7 small fw-semibold ps-4" for="vLargura">Largura VESA (mm)</label>
+                                <div class="col-5"><input type="number" id="vLargura" name="vLargura" class="form-control form-control-sm text-end" value="300"></div>
                             </div>
                             <div class="row align-items-center">
-                                <label class="col-3 small fw-semibold ps-4">Ajuste</label>
-                                <div class="col-3 pe-1"><input type="number" id="offset" class="form-control form-control-sm text-end" value="0"></div>
+                                <label class="col-3 small fw-semibold ps-4" for="offset">Ajuste</label>
+                                <div class="col-3 pe-1"><input type="number" id="offset" name="offset" class="form-control form-control-sm text-end" value="0"></div>
                                 <div class="col-6 ps-0 pe-4">
                                     <div class="btn-group btn-group-sm w-100">
                                         <input type="radio" class="btn-check" name="radioDir" id="dirEsq" value="esquerda" checked>
@@ -212,8 +217,9 @@
                 </div>
             </div>
         </div>
+        </main>
 
-        <section class="affiliate-section no-print mt-5">
+        <section class="affiliate-section no-print mt-5" role="article">
             <h5 class="fw-bold mb-4 text-center text-uppercase small" style="letter-spacing: 1px;">Ferramentas Recomendadas</h5>
             <div class="row g-3">
                 <div class="col-6 col-md-4 col-lg-2 text-center">
@@ -237,7 +243,7 @@
             </div>
         </section>
 
-        <article class="mt-5 p-4 bg-white rounded shadow-sm no-print border">
+        <article class="mt-5 p-4 bg-white rounded shadow-sm no-print border" role="article">
             <h2 class="h4 fw-bold mb-4 text-dark border-bottom pb-2">Guia Prático: Como Instalar sua TV Corretamente</h2>
             <div class="row g-4">
                 <div class="col-md-5">
@@ -272,11 +278,12 @@
             </div>
         </article>
 
-        <footer class="mt-5 text-center py-4 border-top no-print">
+        <footer class="mt-5 text-center py-4 border-top no-print" role="contentinfo">
             <p class="text-muted small">© Calculadora de Instalação de TV</p>
             <nav>
                 <a href="privacidade.html" class="text-decoration-none text-muted small me-3">Política de Privacidade</a>
-                <a href="termos.html" class="text-decoration-none text-muted small">Termos de Uso</a>
+                <a href="termos.html" class="text-decoration-none text-muted small me-3">Termos de Uso</a>
+                <a href="contato.html" class="text-decoration-none text-muted small">Contato</a>
             </nav>
         </footer>
     </div>
